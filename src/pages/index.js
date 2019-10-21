@@ -8,13 +8,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import TransitionsModal from "../components/transacionalModal"
 
 const useStyles = makeStyles(theme => ({
   button: {
     marginTop: '24px',
     margin: theme.spacing(1),
-    width: '100px',
-    backgroundColor: '#86be04'
+    width: '100px'
   },
   input: {
     display: 'none',
@@ -109,9 +109,7 @@ const IndexPage = () => {
       <SubHeader>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend urna vel ultrices luctus. Nulla vel turpis ex. Duis tempor arcu quis nisi pharet
       </SubHeader>
-      <Button variant="contained" color="primary" className={classes.button}>
-        Submit
-      </Button>
+      <TransitionsModal />
     </Section1>
 
     <Section2>
