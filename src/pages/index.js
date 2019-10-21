@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 
 const Section1 = styled.div`
   width: 40%;
-  height: 100%;
+  height: auto;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -31,11 +31,14 @@ const Section1 = styled.div`
   align-items: left;
   justify-content: center;
   justify-items: center;
+  @media only screen and (max-width: 550px) {
+    width: 90%;
+  }
 `;
 
 const Section2 = styled.div`
   width: 60%;
-  height: 100%;
+  height: auto;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -43,6 +46,9 @@ const Section2 = styled.div`
   align-items: left;
   justify-content: center;
   justify-items: center;
+  @media only screen and (max-width: 550px) {
+    width: 90%;
+  }
 `;
 
 const Title = styled.div`
@@ -51,6 +57,14 @@ const Title = styled.div`
   font-size: 47px;
   line-height: 40px;
   color: #1c366f;
+  @media only screen and (max-width: 1024px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 `;
 
 const MainImage = () => {
@@ -74,6 +88,10 @@ const SubHeader = styled.div`
   margin-top: 16px;
   font-size: 16px;
   color: #333333;
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 `;
 
 const IndexPage = () => {

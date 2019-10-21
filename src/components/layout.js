@@ -22,7 +22,7 @@ const Holder = styled.div`
 
 const Main = styled.div`
   width: 90%;
-  height: 90%;
+  height: 100%;
   margin: auto;
   margin-top: 100px;
   top: 0;
@@ -35,6 +35,11 @@ const Main = styled.div`
   align-items: center;
   justify-content: center;
   justify-items: center;
+  @media only screen and (max-width: 550px) {
+    height: 370px;
+    top: 80px;
+    flex-direction: column;
+  }
 `;
 
 const Layout = ({ children }) => {
@@ -64,7 +69,6 @@ const outerTheme = createMuiTheme({
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
