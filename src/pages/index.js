@@ -72,7 +72,7 @@ const MainImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "main_image.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -107,7 +107,13 @@ const IndexPage = () => {
         Know your customer
       </Title>
       <SubHeader>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend urna vel ultrices luctus. Nulla vel turpis ex. Duis tempor arcu quis nisi pharet
+        Know your customer is a standard in the finance and international commerce industry.
+        This allows us to know detailed information about our clients' risk tolerance, investment knowledge, and financial position.
+        KYC protects both clients and investment advisors.
+        <br/>
+        <br/>
+        Please fill out all compliance related information,
+        as well as upload two forms of government issued identification.
       </SubHeader>
       <TransitionsModal />
     </Section1>
